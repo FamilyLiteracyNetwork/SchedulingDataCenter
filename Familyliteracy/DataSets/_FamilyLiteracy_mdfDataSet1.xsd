@@ -99,14 +99,14 @@ SELECT ReportID, ReportTitle FROM ReportScheduleMenu WHERE (ReportID = @ReportID
   <xs:element name="_FamilyLiteracy_mdfDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_FamilyLiteracy_mdfDataSet1" msprop:Generator_UserDSName="_FamilyLiteracy_mdfDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="StudentProfile" msprop:Generator_TableClassName="StudentProfileDataTable" msprop:Generator_TableVarName="tableStudentProfile" msprop:Generator_TablePropName="StudentProfile" msprop:Generator_RowDeletingName="StudentProfileRowDeleting" msprop:Generator_RowChangingName="StudentProfileRowChanging" msprop:Generator_RowEvHandlerName="StudentProfileRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentProfileRowDeleted" msprop:Generator_UserTableName="StudentProfile" msprop:Generator_RowChangedName="StudentProfileRowChanged" msprop:Generator_RowEvArgName="StudentProfileRowChangeEvent" msprop:Generator_RowClassName="StudentProfileRow">
+        <xs:element name="StudentProfile" msprop:Generator_TableClassName="StudentProfileDataTable" msprop:Generator_TableVarName="tableStudentProfile" msprop:Generator_RowChangedName="StudentProfileRowChanged" msprop:Generator_TablePropName="StudentProfile" msprop:Generator_RowDeletingName="StudentProfileRowDeleting" msprop:Generator_RowChangingName="StudentProfileRowChanging" msprop:Generator_RowEvHandlerName="StudentProfileRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentProfileRowDeleted" msprop:Generator_RowClassName="StudentProfileRow" msprop:Generator_UserTableName="StudentProfile" msprop:Generator_RowEvArgName="StudentProfileRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="StudentID" msprop:Generator_ColumnVarNameInTable="columnStudentID" msprop:Generator_ColumnPropNameInRow="StudentID" msprop:Generator_ColumnPropNameInTable="StudentIDColumn" msprop:Generator_UserColumnName="StudentID" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ReportScheduleMenu" msprop:Generator_TableClassName="ReportScheduleMenuDataTable" msprop:Generator_TableVarName="tableReportScheduleMenu" msprop:Generator_TablePropName="ReportScheduleMenu" msprop:Generator_RowDeletingName="ReportScheduleMenuRowDeleting" msprop:Generator_RowChangingName="ReportScheduleMenuRowChanging" msprop:Generator_RowEvHandlerName="ReportScheduleMenuRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportScheduleMenuRowDeleted" msprop:Generator_UserTableName="ReportScheduleMenu" msprop:Generator_RowChangedName="ReportScheduleMenuRowChanged" msprop:Generator_RowEvArgName="ReportScheduleMenuRowChangeEvent" msprop:Generator_RowClassName="ReportScheduleMenuRow">
+        <xs:element name="ReportScheduleMenu" msprop:Generator_TableClassName="ReportScheduleMenuDataTable" msprop:Generator_TableVarName="tableReportScheduleMenu" msprop:Generator_RowChangedName="ReportScheduleMenuRowChanged" msprop:Generator_TablePropName="ReportScheduleMenu" msprop:Generator_RowDeletingName="ReportScheduleMenuRowDeleting" msprop:Generator_RowChangingName="ReportScheduleMenuRowChanging" msprop:Generator_RowEvHandlerName="ReportScheduleMenuRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportScheduleMenuRowDeleted" msprop:Generator_RowClassName="ReportScheduleMenuRow" msprop:Generator_UserTableName="ReportScheduleMenu" msprop:Generator_RowEvArgName="ReportScheduleMenuRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ReportID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnReportID" msprop:Generator_ColumnPropNameInRow="ReportID" msprop:Generator_ColumnPropNameInTable="ReportIDColumn" msprop:Generator_UserColumnName="ReportID" type="xs:int" />
@@ -117,6 +117,14 @@ SELECT ReportID, ReportTitle FROM ReportScheduleMenu WHERE (ReportID = @ReportID
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StudentSchedule" msprop:Generator_TableClassName="StudentScheduleDataTable" msprop:Generator_TableVarName="tableStudentSchedule" msprop:Generator_TablePropName="StudentSchedule" msprop:Generator_RowDeletingName="StudentScheduleRowDeleting" msprop:Generator_RowChangingName="StudentScheduleRowChanging" msprop:Generator_RowEvHandlerName="StudentScheduleRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentScheduleRowDeleted" msprop:Generator_UserTableName="StudentSchedule" msprop:Generator_RowChangedName="StudentScheduleRowChanged" msprop:Generator_RowEvArgName="StudentScheduleRowChangeEvent" msprop:Generator_RowClassName="StudentScheduleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

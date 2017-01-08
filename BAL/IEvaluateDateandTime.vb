@@ -6,9 +6,7 @@ End Interface
 
 
 
-Public Class DatetimeIntervalConversion
-
-    Implements IEvaluateDateTimeIntervals
+Public Class DatetimeIntervalConversion : Implements IEvaluateDateTimeIntervals
 
     Public Function timeIntervals(ByVal starttime As String, ByVal endtime As String) As ArrayList Implements IEvaluateDateTimeIntervals.timeIntervals
         'Calculate time intervals betwen a Starttime and Endtime range
